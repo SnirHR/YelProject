@@ -1,0 +1,16 @@
+﻿.body-content {
+    margin-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+@media screen and (min-width: 768px) {
+    .body-content {
+        padding: 0;
+    }
+}
