@@ -8,7 +8,14 @@ select,
 textarea {
     max-width: 280px;
 }
-
+#nav-logo{
+    width: 95px;
+    height: 40px
+}
+#PageTitle{
+    display: flex;
+    justify-content: center;
+}
 @media screen and (min-width: 768px) {
     .body-content {
         padding: 0;

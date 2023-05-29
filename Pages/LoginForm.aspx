@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="~/Stylesheets/Login.css" />
 </head>
 <body>
-    <form id="formLogin" runat="server" onsubmi="">
+    <form id="formLogin" runat="server" onsubmit="">
         <div id="logo">
             <img src="../Images/logo.png" alt="Logo"/>
         </div>
