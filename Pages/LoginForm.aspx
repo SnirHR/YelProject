@@ -10,12 +10,13 @@
 <body>
     <form id="formLogin" runat="server" onsubmit="">
         <div id="logo">
-            <img src="../Images/logo.png" alt="Logo"/>
+            <a id="navlogo" runat="server" href="~/"></a>
         </div>
         <div id="form-container">
-            <input tabindex="0" id="email-input" placeholder="Enter E-Mail" type="email" />
-            <input tabindex="1" id="password-input" placeholder="Enter Password" type="email" />
+            <input tabindex="1" id="email-input" placeholder="Enter E-Mail" type="email" required="required" />
+            <input tabindex="2" id="password-input" placeholder="Enter Password" type="email" required="required"/>
             <button type="submit">Log In</button>
+            <a href="RegisterForm.aspx" id="login-toggle">Don't have an account?</a>
         </div>
     </form>
 </body>
