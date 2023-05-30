@@ -69,6 +69,15 @@ namespace YelProject.Pages
         protected global::System.Web.UI.HtmlControls.HtmlInputPassword Rconfirm;
 
         /// <summary>
+        /// Reducation control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText Reducation;
+
+        /// <summary>
         /// Rrole control.
         /// </summary>
         /// <remarks>
@@ -87,13 +96,22 @@ namespace YelProject.Pages
         protected global::System.Web.UI.HtmlControls.HtmlSelect Rgender;
 
         /// <summary>
-        /// registerButton control.
+        /// Rlanguage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button registerButton;
+        protected global::System.Web.UI.HtmlControls.HtmlSelect Rlanguage;
+
+        /// <summary>
+        /// Rcountry control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlSelect Rcountry;
 
         /// <summary>
         /// resetButton control.
