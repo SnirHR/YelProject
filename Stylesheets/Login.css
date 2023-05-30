@@ -57,6 +57,7 @@ button {
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s;
+    width: 21%;
 }
 
     button:hover {
