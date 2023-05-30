@@ -11,25 +11,7 @@ namespace YelProject.Pages
 {
 
 
-    public partial class LoginForm
+    public partial class RegisterForm
     {
-
-        /// <summary>
-        /// formRegister control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm formRegister;
-
-        /// <summary>
-        /// navlogo control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor navlogo;
     }
 }

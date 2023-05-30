@@ -14,6 +14,9 @@
 
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="~/Stylesheets/Articles.css" />
+    <link rel="stylesheet" type="text/css" href="~/Stylesheets/Login.css" />
+
 
 </head>
 <body>
@@ -47,7 +50,8 @@
                 <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/About">About</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Articles/Articles">Articles</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/About"></a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/Contact">Contact</a></li>
                     </ul>
                 </div>
