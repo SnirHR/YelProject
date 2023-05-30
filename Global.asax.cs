@@ -19,14 +19,11 @@ namespace YelProject
         }
         void Session_Start(object sender, EventArgs e)
         {
-            //Session["uName"] = "אורח";
-            //Session["admin"] = "no";
-            //Application["counter"] = (int)Application["counter"] + 1;
+            Session["Role"] = "Visitor";
         }
         void Session_End(object sender, EventArgs e)
         {
-            //Session["uName"] = "אורח";
-            //Session["admin"] = "no";
+            Session["Role"] = "אורח";
         }
     }
 }

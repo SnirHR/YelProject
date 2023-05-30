@@ -7,7 +7,7 @@
     <div id="form-container">
         <input id="email-input" placeholder="Enter E-Mail" type="email" required="required" />
         <input id="password-input" placeholder="Enter Password" type="password" required="required" />
-        <button class="submit" type="submit">Register</button>
+        <button name="login-button" id="login-button" class="submit" type="submit">Register</button>
         <button class="reset" type="reset">Reset</button>
         <a href="RegisterForm.aspx" class="login-toggle">Don't have an account?</a>
     </div>
