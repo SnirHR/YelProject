@@ -317,7 +317,6 @@
                     <option value="KP" label="North Korea">North Korea</option>
                     <option value="OM" label="Oman">Oman</option>
                     <option value="PK" label="Pakistan">Pakistan</option>
-                    <option value="PS" label="Palestinian Territories">Palestinian Territories</option>
                     <option value="YD" label="People's Democratic Republic of Yemen">People's Democratic Republic of Yemen</option>
                     <option value="PH" label="Philippines">Philippines</option>
                     <option value="QA" label="Qatar">Qatar</option>
