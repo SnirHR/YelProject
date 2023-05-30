@@ -9,7 +9,7 @@
         <input id="password-input" placeholder="Enter Your Password" type="password" required="required" />
         <button class="submit" type="submit">Sign In</button>
         <button class="reset" type="reset">Reset Form</button>
-        <a href="RegisterForm.aspx" class="login-toggle">Don't have an account?</a>
+        <a href="RegisterForm.aspx" class="login-toggle">Don't have an account? Click here to register</a>
     </div>
 </asp:Content>
 
