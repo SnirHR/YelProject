@@ -132,6 +132,7 @@
     <Content Include="Global.asax" />
     <Content Include="Images\logo.png" />
     <Content Include="Pages\Admin.aspx" />
+    <Content Include="Pages\Admin.js" />
     <Content Include="Pages\RegisterForm.aspx" />
     <Content Include="Pages\LoginForm.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />

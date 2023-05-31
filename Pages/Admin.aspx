@@ -2,11 +2,10 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <link href="../CSS/UsersTable.css" rel="stylesheet" />
+    <link href=".Admin.js" rel=""
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" Runat="Server">
-    <form id="form1" runat="server" >
-   
-        <div>
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" Runat="Server" >   
+        <div onload="createUserTable">
             <br />
             Enter Text to search name:
             <input type="text" name="filter" id="filter" />
@@ -45,10 +44,52 @@
         <br /> <br />
     </div>
     
-    <div runat="server" id="tableDiv">
-
-    </div>
-    </form>
+<%--    <div runat="server" id="tableDiv">
+        <table>
+        <tr>
+            <th>ID</th>
+            <th>Email</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Gender</th>
+            <th>Country</th>
+            <th>Role</th>
+            <th>Educational Background</th>
+            <th>Language</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>example1@example.com</td>
+            <td>John</td>
+            <td>Doe</td>
+            <td>Male</td>
+            <td>USA</td>
+            <td>User</td>
+            <td>Bachelor's Degree</td>
+            <td>English</td>
+            <td>
+                <button>Edit</button>
+                <button>Delete</button>
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>example2@example.com</td>
+            <td>Jane</td>
+            <td>Smith</td>
+            <td>Female</td>
+            <td>Canada</td>
+            <td>Admin</td>
+            <td>Master's Degree</td>
+            <td>French</td>
+            <td>
+                <button>Edit</button>
+                <button>Delete</button>
+            </td>
+        </tr>
+    </table>
+    </div>--%>
     <div runat="server" id="message">
         
     </div>
