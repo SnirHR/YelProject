@@ -106,7 +106,11 @@
     <Content Include="App_Data\Database_log.ldf">
       <DependentUpon>Database.mdf</DependentUpon>
     </Content>
-    <Content Include="Articles\Articles.aspx" />
+    <Content Include="Articles\ExperiencedMentor.aspx" />
+    <Content Include="Articles\NewMentor.aspx" />
+    <Content Include="Images\Experienced.png" />
+    <Content Include="Images\New.png" />
+    <Content Include="Pages\Articles.aspx" />
     <Content Include="Articles\MentorArticles.aspx" />
     <Content Include="Articles\StudentArticles.aspx" />
     <Content Include="Content\Articles.txt" />
@@ -132,6 +136,7 @@
     <Content Include="Global.asax" />
     <Content Include="Images\logo.png" />
     <Content Include="Pages\Admin.aspx" />
+    <Content Include="Pages\Admin.js" />
     <Content Include="Pages\RegisterForm.aspx" />
     <Content Include="Pages\LoginForm.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
@@ -190,22 +195,37 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
+    <Content Include="Stylesheets\Admin.css" />
     <Content Include="Stylesheets\Articles.css" />
     <Content Include="Stylesheets\Login.css" />
+    <Content Include="Stylesheets\NewMentor.css" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
-    <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\Helper.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Articles\Articles.aspx.cs">
+    <Compile Include="Articles\ExperiencedMentor.aspx.cs">
+      <DependentUpon>ExperiencedMentor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Articles\ExperiencedMentor.aspx.designer.cs">
+      <DependentUpon>ExperiencedMentor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Articles\NewMentor.aspx.cs">
+      <DependentUpon>NewMentor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Articles\NewMentor.aspx.designer.cs">
+      <DependentUpon>NewMentor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Articles.aspx.cs">
       <DependentUpon>Articles.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Articles\Articles.aspx.designer.cs">
+    <Compile Include="Pages\Articles.aspx.designer.cs">
       <DependentUpon>Articles.aspx</DependentUpon>
     </Compile>
     <Compile Include="Articles\MentorArticles.aspx.cs">
@@ -262,13 +282,6 @@
     </Compile>
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
-    </Compile>
-    <Compile Include="Site.Mobile.Master.cs">
-      <DependentUpon>Site.Mobile.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Site.Mobile.Master.designer.cs">
-      <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>

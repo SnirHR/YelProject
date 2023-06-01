@@ -7,9 +7,7 @@ namespace YelProject.Classes
 {
     public class User
     {
-
-        private int Id { get; set; }
-
+        public int Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Email { get; set; }
@@ -19,9 +17,8 @@ namespace YelProject.Classes
         public string Country { get; set; }
         public string Language { get; set; }
         public string EducationalBackground { get; set; }
-        public DateTime Birthday { get; set; }
-
-        public User(string firstName, string lastName, string email, string password, string role, string gender, string country, string language,string EducationalBackground, DateTime birthday)
+        public string Birthday { get; set; }
+        public User(string firstName, string lastName, string email, string password, string role, string gender, string country, string language, string EducationalBackground, string birthday)
         {
             this.FirstName = firstName;
             this.LastName = lastName;

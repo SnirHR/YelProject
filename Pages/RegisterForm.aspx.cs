@@ -28,7 +28,7 @@ namespace YelProject.Pages
             string country = Rcountry.Value;
             string language = Rlanguage.Value;
             string educationalBackground = Reducation.Value;
-            DateTime birthday = DateTime.Parse(Rbirthday.Value);
+            string birthday = Rbirthday.Value;
 
             if (!string.IsNullOrEmpty(email) || !string.IsNullOrEmpty(firstName) || !string.IsNullOrEmpty(lastName) ||
                 !string.IsNullOrEmpty(password) || !string.IsNullOrEmpty(confirmPassword) || !string.IsNullOrEmpty(role) ||

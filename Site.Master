@@ -50,9 +50,8 @@
                 <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Articles/Articles">Articles</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Pages/Articles">Articles</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/About"></a></li>
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="collapse navbar-collapse d-sm-inline-flex justify-content-end">
@@ -67,9 +66,6 @@
             </asp:ContentPlaceHolder>
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
-            <hr />
-            <footer>
-            </footer>
         </div>
     </form>
     <asp:PlaceHolder runat="server">
