@@ -14,13 +14,19 @@ namespace YelProject.Pages
 
         }
 
+
         protected void Login(object sender, EventArgs e)
         {
-            if(SignIn(Luser.Value, Lpassword.Value)== true)
-            {
+            if (!string.IsNullOrEmpty(Luser.Value) || !string.IsNullOrEmpty(Lpassword.Value))
+                {
+                LlblError.Text = string.Empty;
                 Session["Username"] = Luser.Value;
-                Session["Role"] = Helper.GetRole(Luser);
+                Session["Role"] = Helper.GetRole(Luser.Value);
+                Response.Redirect(Page.ResolveClientUrl("../"));
+                return;
             }
+            LlblError.Text = "All fields are required.";
+            return;
         }
 
         private bool SignIn(string Username, string Password)

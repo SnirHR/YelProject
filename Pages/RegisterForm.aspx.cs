@@ -34,13 +34,12 @@ namespace YelProject.Pages
                 !string.IsNullOrEmpty(password) || !string.IsNullOrEmpty(confirmPassword) || !string.IsNullOrEmpty(role) ||
                 !string.IsNullOrEmpty(gender))
             {
-                Console.WriteLine(Rpassword.Value);
-                Console.WriteLine(Rconfirm.Value);
                 if (password == confirmPassword)
                 {
                     lblError.Text = string.Empty;
                     User user = new User(username,firstName,lastName,email,password,role,gender,country,language, educationalBackground,birthday);
                     Helper.CreateUser(user);
+                    Response.Redirect(Page.ResolveClientUrl("./LoginForm"));
                     return;
                 }
                 lblError.Text = "Passwords do not match.";
@@ -49,7 +48,6 @@ namespace YelProject.Pages
             lblError.Text = "All fields are required.";
             return;
 
-    
         }
 
     }

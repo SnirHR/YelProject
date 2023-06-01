@@ -10,5 +10,6 @@
         <button class="submit" type="submit">Login</button>
         <button class="reset" type="reset">Reset</button>
         <a href="RegisterForm.aspx" class="login-toggle">Don't have an account?</a>
+        <asp:Label ID="LlblError" runat="server" ForeColor="Red"></asp:Label>
     </div>
 </asp:Content>

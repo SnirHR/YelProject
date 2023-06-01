@@ -5,15 +5,17 @@ using System.Web;
 using System.Data;
 using System.Data.SqlClient;
 using YelProject.Classes;
+using System.Runtime.Remoting.Messaging;
+using System.Web.UI.WebControls;
 
 public static class Helper
 {
     public const string DBName = "Database.mdf";   //Name of the MSSQL Database.
     public const string tblName = "Users";      // Name of the user Table in the Database
-    public const string conString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\" 
+    public const string conString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\"
                                     + DBName + ";Integrated Security=True";   // The Data Base is in the App_Data = |DataDirectory|
 
-   /////////////////////////////////////////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////
     public static DataSet RetrieveTable(string SQLStr)
     // Gets A table from the data base acording to the SELECT Command in SQLStr;
     // Returns DataSet with the Table.
@@ -32,7 +34,7 @@ public static class Helper
 
         // Get Data form DataBase into the DataSet
         ad.Fill(ds, tblName);
-       
+
         return ds;
     }
 
@@ -60,7 +62,7 @@ public static class Helper
         str += "</Table>";
         return str;
     }
-    public static void Delete(int [] userIdToDelete)
+    public static void Delete(int[] userIdToDelete)
     // The Array "userIdToDelete" contain the id of the users to delete. 
     // Delets all the users in the array "userIdToDelete".
     {
@@ -89,7 +91,7 @@ public static class Helper
         adapter.Update(ds, tblName);
     }
 
-    
+
 
 
     public static string BuildUsersTable(DataTable dt)
@@ -123,8 +125,8 @@ public static class Helper
     {
         return $"<input type='checkbox' name='chk{id}' id='chk{id}' runat='server' />";
     }
- 
- 
+
+
     public static DataTable FilterTable(DataTable dt, string column, string criteria)
     {
         dt.DefaultView.RowFilter = column + "=" + criteria;
@@ -201,6 +203,23 @@ public static class Helper
 
     public static string GetRole(string Username)
     {
-        return"";
+        string query = $"SELECT * FROM Users WHERE Username = '{Username}'";
+        DataSet ds = RetrieveTable(query);
+        if (ds.Tables["Users"].Rows.Count > 0)
+        {
+            return ds.Tables["Users"].Rows[0]["Role"].ToString();
+            }
+        return "Visitor";
+    }
+
+    public static bool NameExist(string Username)
+    {
+        string query = $"SELECT *  FROM Users WHERE Username = '{Username}'";
+        DataSet ds = RetrieveTable(query);
+        if (ds.Tables["Role"].Rows.Count>0)
+        {
+            return true;
+        }
+        return false;
     }
 }
