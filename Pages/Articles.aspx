@@ -5,8 +5,8 @@
     <div id="container">
         <h1>Choose Your Role</h1>
         <div id="roles">
-            <a class="role" href="MentorArticles.aspx">Mentor</a>
-            <a class="role" href="StudentArticles.aspx">Student</a>
+            <a class="role" href="../Articles/MentorArticles">Mentor</a>
+            <a class="role" href="../Articles/StudentArticles">Student</a>
         </div>
     </div>
 </asp:Content>

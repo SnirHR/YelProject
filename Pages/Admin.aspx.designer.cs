@@ -7,20 +7,97 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace YelProject.Pages
-{
 
 
-    public partial class Admin
-    {
+public partial class  Admin{
 
-        /// <summary>
-        /// formLogin control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm formLogin;
-    }
+    /// <summary>
+    /// usertablecontainer control.
+    /// </summary>
+    /// <remarks>
+    /// Auto-generated field.
+    /// To modify move field declaration from designer file to code-behind file.
+    /// </remarks>
+    protected global::System.Web.UI.HtmlControls.HtmlGenericControl usertablecontainer;
+
+/// <summary>
+/// btnFilter control.
+/// </summary>
+/// <remarks>
+/// Auto-generated field.
+/// To modify move field declaration from designer file to code-behind file.
+/// </remarks>
+protected global::System.Web.UI.HtmlControls.HtmlInputButton btnFilter;
+
+/// <summary>
+/// btnDelete control.
+/// </summary>
+/// <remarks>
+/// Auto-generated field.
+/// To modify move field declaration from designer file to code-behind file.
+/// </remarks>
+protected global::System.Web.UI.HtmlControls.HtmlInputButton btnDelete;
+
+/// <summary>
+/// btnAdd control.
+/// </summary>
+/// <remarks>
+/// Auto-generated field.
+/// To modify move field declaration from designer file to code-behind file.
+/// </remarks>
+protected global::System.Web.UI.HtmlControls.HtmlInputButton btnAdd;
+
+/// <summary>
+/// btnAdmin control.
+/// </summary>
+/// <remarks>
+/// Auto-generated field.
+/// To modify move field declaration from designer file to code-behind file.
+/// </remarks>
+protected global::System.Web.UI.HtmlControls.HtmlInputButton btnAdmin;
+
+/// <summary>
+/// btnUser control.
+/// </summary>
+/// <remarks>
+/// Auto-generated field.
+/// To modify move field declaration from designer file to code-behind file.
+/// </remarks>
+protected global::System.Web.UI.HtmlControls.HtmlInputButton btnUser;
+
+/// <summary>
+/// Columns control.
+/// </summary>
+/// <remarks>
+/// Auto-generated field.
+/// To modify move field declaration from designer file to code-behind file.
+/// </remarks>
+protected global::System.Web.UI.HtmlControls.HtmlSelect Columns;
+
+/// <summary>
+/// btnSort control.
+/// </summary>
+/// <remarks>
+/// Auto-generated field.
+/// To modify move field declaration from designer file to code-behind file.
+/// </remarks>
+protected global::System.Web.UI.HtmlControls.HtmlInputButton btnSort;
+
+/// <summary>
+/// message control.
+/// </summary>
+/// <remarks>
+/// Auto-generated field.
+/// To modify move field declaration from designer file to code-behind file.
+/// </remarks>
+protected global::System.Web.UI.HtmlControls.HtmlGenericControl message;
+
+/// <summary>
+/// message1 control.
+/// </summary>
+/// <remarks>
+/// Auto-generated field.
+/// To modify move field declaration from designer file to code-behind file.
+/// </remarks>
+protected global::System.Web.UI.HtmlControls.HtmlGenericControl message1;
 }

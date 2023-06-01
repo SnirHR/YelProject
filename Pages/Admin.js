@@ -1,4 +1,4 @@
-﻿function createUserTable() {
+﻿function createUserTable(Users) {
     var users = [
         new User("John", "Doe", "john@example.com", "password", "User", "Male", "USA", "English", "Bachelor's Degree", new Date("1990-01-01")),
         new User("Jane", "Smith", "jane@example.com", "password", "Admin", "Female", "Canada", "French", "Master's Degree", new Date("1992-05-10"))
@@ -15,7 +15,6 @@
     }
 
     table.appendChild(headerRow);
-
     // Create table rows
     for (var j = 0; j < users.length; j++) {
         var user = users[j];

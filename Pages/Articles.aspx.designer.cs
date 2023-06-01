@@ -9,5 +9,5 @@
 
 
 
-public partial class  Articles{
+public partial class Articles{
 }
