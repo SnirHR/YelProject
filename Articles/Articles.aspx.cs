@@ -11,7 +11,10 @@ namespace YelProject.Articles
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["Role"] != "Mentor" || Session["Role"] != "Admin" || Session["Role"] != "Student")
+            {
+                Response.Redirect(Page.ResolveClientUrl("../"));
+            }
         }
     }
 }

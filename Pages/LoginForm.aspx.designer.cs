@@ -11,7 +11,7 @@ namespace YelProject.Pages
 {
 
 
-    public partial class RegisterForm
+    public partial class LoginForm
     {
 
         /// <summary>

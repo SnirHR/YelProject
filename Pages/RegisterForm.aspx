@@ -1,6 +1,6 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="RegisterForm.aspx.cs" MasterPageFile="~/Site.Master" Inherits="YelProject.Pages.RegisterForm" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="RegisterForm.aspx.cs" MasterPageFile="~/Site.Master" CodeFile="RegisterForm.aspx.cs" Inherits="YelProject.Pages.RegisterForm"%>
 
-<asp:Content ID="Content" ContentPlaceHolderID="MainContent" runat="server">
+<asp:Content id="Content" ContentPlaceHolderID="MainContent" runat="server">
     <div class="logo-container">
         <a href="../" class="logo"></a>
     </div>
@@ -174,9 +174,9 @@
             <option value="IL">Israel</option>
         </select>
 
-        <asp:button ID="registerButton" runat="server" Text="Register" class="submit" type="submit" OnClick="RegisterButton_Click"/>
-        <asp:Button ID="resetButton" runat="server" Text="Reset" type="reset" />
+        <asp:Button id="registerButton" runat="server" Text="Register" CssClass="submit" OnClick="RegisterButton_Click" />
+        <asp:Button id="resetButton" runat="server" Text="Reset" Type="Reset" />
         <a href="LoginForm.aspx" class="login-toggle">Already have an account?</a>
-        <asp:Label ID="lblError" runat="server" ForeColor="Red"></asp:Label>
+        <asp:Label id="lblError" runat="server" ForeColor="Red"></asp:Label>
     </div>
 </asp:Content>

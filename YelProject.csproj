@@ -243,9 +243,6 @@
       <DependentUpon>RegisterForm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Pages\RegisterForm.aspx.designer.cs">
-      <DependentUpon>RegisterForm.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Pages\LoginForm.aspx.cs">
       <DependentUpon>LoginForm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
