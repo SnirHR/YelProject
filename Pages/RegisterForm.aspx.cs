@@ -16,8 +16,8 @@ namespace YelProject.Pages
         }
         protected void RegisterButton_Click(object sender, EventArgs e)
         {
-            Remail.Value = "Test";
             // Retrieve values from the form
+            string username = Ruser.Value;
             string email = Remail.Value;
             string firstName = Rfname.Value;
             string lastName = Rlname.Value;
@@ -28,17 +28,20 @@ namespace YelProject.Pages
             string country = Rcountry.Value;
             string language = Rlanguage.Value;
             string educationalBackground = Reducation.Value;
-            DateTime birthday = DateTime.Parse(Rbirthday.Value);
+            string birthday = Rbirthday.Value;
 
             if (!string.IsNullOrEmpty(email) || !string.IsNullOrEmpty(firstName) || !string.IsNullOrEmpty(lastName) ||
                 !string.IsNullOrEmpty(password) || !string.IsNullOrEmpty(confirmPassword) || !string.IsNullOrEmpty(role) ||
                 !string.IsNullOrEmpty(gender))
             {
+                Console.WriteLine(Rpassword.Value);
+                Console.WriteLine(Rconfirm.Value);
                 if (password == confirmPassword)
                 {
                     lblError.Text = string.Empty;
-                    User user = new User(firstName,lastName,email,password,role,gender,country,language, educationalBackground,birthday);
+                    User user = new User(username,firstName,lastName,email,password,role,gender,country,language, educationalBackground,birthday);
                     Helper.CreateUser(user);
+                    return;
                 }
                 lblError.Text = "Passwords do not match.";
                 return;

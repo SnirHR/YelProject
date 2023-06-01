@@ -10,29 +10,32 @@ namespace YelProject.Classes
 
         private int Id { get; set; }
 
+        public string Username { get; set; }
+        public string Email { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public string Email { get; set; }
+        public string Birthdate { get; set; }
         public string Password { get; set; }
+        public string EducationalBackground { get; set; }
         public string Role { get; set; }
         public string Gender { get; set; }
-        public string Country { get; set; }
         public string Language { get; set; }
-        public string EducationalBackground { get; set; }
-        public DateTime Birthday { get; set; }
+        public string Country { get; set; }
 
-        public User(string firstName, string lastName, string email, string password, string role, string gender, string country, string language,string EducationalBackground, DateTime birthday)
+
+        public User(string Username, string email, string firstName, string lastName, string birthday, string password, string EducationalBackground, string role, string gender, string language, string country)
         {
+            this.Username = Username;
+            this.Email = email;
             this.FirstName = firstName;
             this.LastName = lastName;
-            this.Email = email;
+            this.Birthdate = birthday;
             this.Password = password;
+            this.EducationalBackground = EducationalBackground;
             this.Role = role;
             this.Gender = gender;
-            this.Country = country;
             this.Language = language;
-            this.EducationalBackground = EducationalBackground;
-            this.Birthday = birthday;
+            this.Country = country;
         }
     }
 }

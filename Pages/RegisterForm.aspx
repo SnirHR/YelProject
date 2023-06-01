@@ -5,6 +5,7 @@
         <a href="../" class="logo"></a>
     </div>
     <div id="form-container">
+        <input id="Ruser" placeholder="Enter Username" type="text" required="required" runat="server" />
         <input id="Remail" placeholder="Enter E-Mail" type="email" required="required" runat="server" />
         <input id="Rfname" placeholder="Enter first name" type="text" required="required" runat="server" />
         <input id="Rlname" placeholder="Enter last name" type="text" required="required" runat="server" />
@@ -173,7 +174,7 @@
             <option value="IL">Israel</option>
         </select>
 
-        <button id="registerButton" class="submit" type="submit" OnServerClick="RegisterButton_Click">Register</button>
+        <asp:button ID="registerButton" runat="server" Text="Register" class="submit" type="submit" OnClick="RegisterButton_Click"/>
         <asp:Button ID="resetButton" runat="server" Text="Reset" type="reset" />
         <a href="LoginForm.aspx" class="login-toggle">Already have an account?</a>
         <asp:Label ID="lblError" runat="server" ForeColor="Red"></asp:Label>

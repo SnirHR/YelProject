@@ -9,7 +9,7 @@ using YelProject.Classes;
 public static class Helper
 {
     public const string DBName = "Database.mdf";   //Name of the MSSQL Database.
-    public const string tblName = "MyTable";      // Name of the user Table in the Database
+    public const string tblName = "Users";      // Name of the user Table in the Database
     public const string conString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\" 
                                     + DBName + ";Integrated Security=True";   // The Data Base is in the App_Data = |DataDirectory|
 
@@ -149,9 +149,8 @@ public static class Helper
     public static void CreateUser(User user)
     {
         // Create the SQL query to insert the user into the database
-        string query = $"INSERT INTO Users(Email, FirstName, LastName, Gender, Country, Role, EducationalBackground, Language) " +
-                       $"VALUES ('{user.Email}', '{user.FirstName}', '{user.LastName}', '{user.Gender}', '{user.Country}', '{user.Role}', " +
-                       $"'{user.EducationalBackground}', '{user.Language}')";
+        string query = $"INSERT INTO Users(Username,Email, FirstName, LastName, Date, Password, EducationalBackground, Role, Gender, Language, Country) " +
+                       $"VALUES ('{user.Username}','{user.Email}', '{user.FirstName}', '{user.LastName}', '{user.Birthdate}', '{user.Password}', '{user.EducationalBackground}', '{user.Role}', '{user.Gender}', '{user.Language}', '{user.Country}')";
 
         // Execute the query
         ExecuteNonQuery(query);
@@ -172,5 +171,36 @@ public static class Helper
         con.Close();
 
         return n;
+    }
+
+    public static bool Login(string user, string password)
+    {
+        // Build the SQL query to retrieve the user data
+        string query = $"SELECT * FROM Users WHERE User = '{user}'";
+
+        // Retrieve the user data from the database
+        DataSet ds = RetrieveTable(query);
+
+        // Check if there is a matching user
+        if (ds.Tables["Users"].Rows.Count > 0)
+        {
+            // Retrieve the stored password for the user
+            string storedPassword = ds.Tables["Users"].Rows[0]["Password"].ToString();
+
+            // Verify the password
+            if (storedPassword == password)
+            {
+                // Valid login credentials
+                return true;
+            }
+        }
+
+        // Invalid login credentials
+        return false;
+    }
+
+    public static string GetRole(string Username)
+    {
+        return"";
     }
 }

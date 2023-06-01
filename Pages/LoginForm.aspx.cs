@@ -13,5 +13,23 @@ namespace YelProject.Pages
         {
 
         }
+
+        protected void Login(object sender, EventArgs e)
+        {
+            if(SignIn(Luser.Value, Lpassword.Value)== true)
+            {
+                Session["Username"] = Luser.Value;
+                Session["Role"] = Helper.GetRole(Luser);
+            }
+        }
+
+        private bool SignIn(string Username, string Password)
+        {
+            if (Helper.Login(Username,Password) == true)
+            {
+                return true;
+            }
+            return false;
+        }
     }
 }
