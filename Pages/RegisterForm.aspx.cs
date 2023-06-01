@@ -16,8 +16,7 @@ namespace YelProject.Pages
         }
         protected void RegisterButton_Click(object sender, EventArgs e)
         {
-            Remail.Value = "Test";
-            // Retrieve values from the form
+            string username = Ruser.Value;
             string email = Remail.Value;
             string firstName = Rfname.Value;
             string lastName = Rlname.Value;
@@ -37,17 +36,16 @@ namespace YelProject.Pages
                 if (password == confirmPassword)
                 {
                     lblError.Text = string.Empty;
-                    User user = new User(firstName,lastName,email,password,role,gender,country,language, educationalBackground,birthday);
+                    User user = new User(username, firstName, lastName, email, password, role, gender, country, language, educationalBackground, birthday);
                     Helper.CreateUser(user);
+                    Response.Redirect(Page.ResolveClientUrl("./LoginForm"));
+                    return;
                 }
                 lblError.Text = "Passwords do not match.";
                 return;
             }
             lblError.Text = "All fields are required.";
             return;
-
-    
+            }
         }
-
     }
-}

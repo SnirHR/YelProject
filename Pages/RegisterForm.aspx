@@ -5,6 +5,7 @@
         <a href="../" class="logo"></a>
     </div>
     <div id="form-container">
+        <input id="Ruser" placeholder="Enter Username" type="text" required="required" runat="server" />
         <input id="Remail" placeholder="Enter E-Mail" type="email" required="required" runat="server" />
         <input id="Rfname" placeholder="Enter first name" type="text" required="required" runat="server" />
         <input id="Rlname" placeholder="Enter last name" type="text" required="required" runat="server" />
